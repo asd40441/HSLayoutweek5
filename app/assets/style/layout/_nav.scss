@@ -1,0 +1,49 @@
+nav{
+    height: 800px;
+    width: 296px;
+    background-color: $gray-100;
+    padding: 32px;
+  }
+  
+  .menu{
+    img{
+      margin-left: 32px;
+      margin-bottom: 32px;
+    }
+    a{
+      padding: 0;
+      padding-left: 32px;
+      padding-bottom: 24px;
+      &:hover{
+        color: $success;
+      }
+    }
+    span{
+      margin-right: 18px;
+    }
+  }
+  
+  .nav-info{
+    padding-left: 32px;
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    .nav-info-name{
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .nav-link.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 32px;
+    border-left: 4px solid #198754;
+  }
+

@@ -1,6 +1,20 @@
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-@import './layout/index.scss'
+@import "config/variables";// 變數  
+@import "config/reset";
+@import "config/base"; // 全站設定
+@import "config/mixins";
+
+@import "components/modal";
+
+// layout 共同框架,第一層
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/menu";
+@import "layout/aside";
+
+// 頁面設計
+@import "pages/index";     
